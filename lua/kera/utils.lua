@@ -95,7 +95,7 @@ utils.highlight = function(group, color)
         end
     end
 
-    vim.api.nvim_set_hl(0, group, hl)
+    -- vim.api.nvim_set_hl(0, group, hl)
 end
 
 utils.highlight_groups = function(groups)
