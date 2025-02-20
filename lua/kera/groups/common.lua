@@ -34,7 +34,7 @@ M.get_colors = function(conf)
         ErrorMsg         = { fg = p.error, style = 'bold' },
         EndOfBuffer      = { fg = p.color400 or p.color600 },
         FloatBorder      = { bg = "#101421", fg = p.color200 }, -- Hover border
-        FloatTitle       = { fg = p.builtin, bold = true, bg = "none" },
+        FloatTitle       = { fg = p.color200, bold = true, bg = "none" },
         FloatFooter      = { fg = p.color100, bg = "none" },
         Folded           = { fg = p.color200, bg = "none" }, -- TODO: Change none to panel color
         FoldColumn       = { fg = p.color200, bg = "none" },
