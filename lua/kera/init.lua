@@ -81,9 +81,9 @@ end
 -- end, {})
 
 function M.colorscheme()
-    -- if vim.g.colors_name then
-    --     vim.cmd 'hi clear'
-    -- end
+    if vim.g.colors_name then
+        vim.cmd.hi('clear') -- Use proper clear command
+    end
 
     vim.opt.termguicolors = true
     vim.g.colors_name = 'kera'

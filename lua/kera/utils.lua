@@ -10,7 +10,7 @@ local function parse_color(color)
 
     local hex_color = vim.api.nvim_get_color_by_name(color)
     if hex_color ~= -1 then
-        return string.format('#x06x', hex_color)
+        return string.format('#%06x', hex_color)
     end
 
     local ok, palette = pcall(require, 'kera.palette')
