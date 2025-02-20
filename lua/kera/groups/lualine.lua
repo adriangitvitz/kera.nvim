@@ -22,7 +22,7 @@ M.get_colors = function(conf)
         normal = {
             a = { fg = p.color800, bg = p.color100, gui = 'bold' },
             b = { fg = p.color100, bg = p.color600 },
-            c = { fg = p.color400, bg = p.none },
+            c = { fg = p.color400, bg = "none" },
         },
         insert = {
             a = { fg = p.color800, bg = p.color100, gui = 'bold' },

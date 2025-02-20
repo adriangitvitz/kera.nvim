@@ -2,8 +2,9 @@ local M = {}
 
 ---@class KeraColorscheme.InternalConfig
 local DEFAULT_SETTINGS = {
-    -- ---@type boolean
-    -- transparent = false,
+    ---@type boolean
+    transparent = false,
+
     ---@class KeraColorscheme.InternalConfig.style
     style = {
         ---@type string
@@ -109,8 +110,8 @@ local DEFAULT_SETTINGS = {
         operator = "#7A8798",
         ---@type string
         line = "#2D2D35",
-        ---@type string
-        none = 'none',
+        -- ---@type string
+        -- none = 'none',
     },
 
     ---@class KeraColorscheme.InternalConfig.plugins

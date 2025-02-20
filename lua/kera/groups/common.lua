@@ -6,7 +6,7 @@ M.get_colors = function(conf)
 
     local hl = {
         ColorColumn      = { bg = p.placeholder },
-        Conceal          = { fg = p.color200, bg = p.none },
+        Conceal          = { fg = p.color200, bg = "none" },
         CurSearch        = { link = 'IncSearch' },
         Cursor           = { fg = p.color200, bg = p.placeholder },
         vCursor          = { gui = "reverse" },
@@ -30,7 +30,7 @@ M.get_colors = function(conf)
         diffAdded        = { link = 'DiffAdd' },
         diffChanged      = { link = 'DiffChange' },
         diffRemoved      = { link = 'DiffDelete' },
-        Directory        = { fg = p.color300, bg = p.none },
+        Directory        = { fg = p.color300, bg = "none" },
         ErrorMsg         = { fg = p.error, style = 'bold' },
         EndOfBuffer      = { fg = p.color400 or p.color600 },
         FloatBorder      = { fg = p.color100, bg = "none" }, -- Use your 'info' color (#00A8FF)
