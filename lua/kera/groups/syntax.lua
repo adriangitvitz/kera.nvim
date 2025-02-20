@@ -16,7 +16,7 @@ M.get_colors = function(conf)
         Delimiter      = { fg = p.color200 },
         Error          = { fg = p.error, gui = conf.style.error },             -- (preferred) any erroneous construct
         Exception      = { fg = p.info, gui = conf.style.keywords_exception }, -- 'try', 'catch', 'throw'
-        Float          = { fg = p.primary, gui = conf.style.float },           -- float constants
+        Float          = { fg = p.color200, gui = conf.style.float },          -- float constants
         Function       = { fg = p.primary, gui = conf.style.functions },       -- functions
         Identifier     = { fg = p.color200, gui = conf.style.variables },      -- (preferred) any variable
         Include        = { fg = p.primary },                                   -- preprocessor '#include'
