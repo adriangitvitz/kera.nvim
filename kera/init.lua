@@ -71,14 +71,14 @@ function M.setup(opts)
     }, config.groups or {})
 end
 
-function M.reload()
-    package.loaded['kera'] = nil
-    require('kera').colorscheme()
-end
-
-vim.api.nvim_create_user_command('KeraReload', function()
-    require('kera').reload()
-end, {})
+-- function M.reload()
+--     package.loaded['kera'] = nil
+--     require('kera').colorscheme()
+-- end
+--
+-- vim.api.nvim_create_user_command('KeraReload', function()
+--     require('kera').reload()
+-- end, {})
 
 function M.colorscheme()
     -- if vim.g.colors_name then
