@@ -1,4 +1,4 @@
-local common_group = require('kela.groups.common')
+local common_group = require('kera.groups.common')
 local M = {}
 
 ---@param conf KeraColorscheme.InternalConfig
