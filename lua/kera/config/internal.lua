@@ -20,7 +20,7 @@ local DEFAULT_SETTINGS = {
         ---@type string
         conditionals = "none",
         ---@type string
-        functions = "none",
+        functions = "bold",
         ---@type string
         headings = "bold",
         ---@type string

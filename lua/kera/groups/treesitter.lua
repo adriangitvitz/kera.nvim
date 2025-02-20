@@ -16,14 +16,14 @@ M.get_colors = function(conf)
         ["@constant"]              = syntax["Constant"],                                     -- constants
         ["@constant.builtin"]      = { fg = p.primary, gui = conf.style.builtin_constants }, -- constants defined by the language, like 'nil' in Lua
         ["@constant.macro"]        = syntax["Macro"],                                        -- constants defined by macros, like 'NULL' in C
-        ["@constructor"]           = { fg = p.constant, gui = conf.style.functions },        -- constructor calls and definitions
+        ["@constructor"]           = { fg = p.primary, gui = conf.style.functions },         -- constructor calls and definitions
         ["@constructor.lua"]       = { fg = p.type, gui = conf.style.functions },            -- constructor calls and definitions, `= { }` in Lua
         ["@diff.delta"]            = { fg = p.delta },                                       -- changed text (diff files)
         ["@diff.minus"]            = { fg = p.error },                                       -- removed text (diff files)
         ["@diff.plus"]             = { fg = p.plus },                                        -- added text (diff files)
         ["@function"]              = syntax["Function"],                                     -- functions
         ["@function.builtin"]      = { fg = p.func, gui = conf.style.builtin_functions },    -- built-in functions
-        ["@function.call"]         = { fg = p.parameter },                                   -- function calls
+        ["@function.call"]         = { fg = p.builtin, gui = conf.style.builtin_functions }, -- function calls
         ["@function.macro"]        = syntax["Macro"],                                        -- macro-defined functions
         ["@function.method"]       = { fg = p.func },                                        -- methods
         ["@function.method.call"]  = { fg = p.type },                                        -- method calls
@@ -72,7 +72,8 @@ M.get_colors = function(conf)
         ["@variable"]              = { fg = p.fg, gui = conf.style.variables },              -- any variable without another highlight
         ["@variable.builtin"]      = { fg = p.builtin, gui = conf.style.builtin_variables }, -- built-in variables like 'self' or 'this'
         ["@variable.member"]       = { fg = p.builtin },                                     -- fields
-        ["@variable.parameter"]    = { fg = p.parameter },                                   -- function parameters
+        ["@variable.parameter"]    = { fg = p.color200 },                                    -- function parameters
+        ['@parameter']             = { fg = p.color200 },
     }
     return hl
 end
