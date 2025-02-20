@@ -48,7 +48,7 @@ M.get_colors = function(conf)
         NormalNC         = { fg = p.color200, bg = "#0E1019" },
         NormalFloat      = { bg = "NONE", fg = "#C8C8C8" }, -- Defined background
         ModeMsg          = { fg = p.color200 },
-        Pmenu            = { fg = p.color200, bg = p.color700 },
+        Pmenu            = { fg = p.color200, bg = "none" },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
         PmenuSbar        = { bg = p.colo700 },
         PmenuThumb       = { bg = p.color600 },
