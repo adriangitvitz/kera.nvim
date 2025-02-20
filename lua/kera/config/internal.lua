@@ -159,6 +159,4 @@ M.current = M._DEFAULT_SETTINGS
 local opts = type(vim.g.kera_colorscheme) == "function" and vim.g.kera_colorscheme() or vim.g.kera_colorscheme or {}
 
 ---@param user_opts KeraColorscheme.Config
-M.set = function(user_opts)
-    M.current = vim.tbl_deep_extend("force", vim.deepcopy(M.current), user_opts or opts)
-end
+M.set = function(user_opts) M.current = vim.tbl_deep_extend("force", vim.deepcopy(M.current), user_opts or opts) end
