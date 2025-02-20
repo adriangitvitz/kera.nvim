@@ -33,7 +33,7 @@ M.get_colors = function(conf)
         Directory        = { fg = p.color300, bg = "none" },
         ErrorMsg         = { fg = p.error, style = 'bold' },
         EndOfBuffer      = { fg = p.color400 or p.color600 },
-        FloatBorder      = { bg = "#202020", fg = p.info }, -- Hover border
+        FloatBorder      = { bg = "#202020", fg = p.color200 }, -- Hover border
         FloatTitle       = { fg = p.builtin, bold = true, bg = "none" },
         FloatFooter      = { fg = p.color100, bg = "none" },
         Folded           = { fg = p.color200, bg = "none" }, -- TODO: Change none to panel color
@@ -46,7 +46,7 @@ M.get_colors = function(conf)
         NonText          = { fg = p.color500 },
         Normal           = { fg = p.fg, bg = "none" },
         NormalNC         = { fg = p.color200, bg = "#0E1019" },
-        NormalFloat      = { bg = "#202020", fg = p.color200 }, -- Hover background
+        NormalFloat      = { bg = "NONE", fg = p.color200 }, -- Hover background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color100, bg = "none" },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
