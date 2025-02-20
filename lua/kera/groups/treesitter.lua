@@ -36,7 +36,7 @@ M.get_colors = function(conf)
         ['@keyword.function']      = { fg = p.color300 },
         ["@label"]                 = syntax["Label"],                                        -- labels
         ["@markup"]                = { fg = p.fg },                                          -- text in markup languages
-        ["@markup.heading"]        = { fg = p.keyword, gui = conf.style.headings },          -- markdown titles
+        ["@markup.heading"]        = { fg = p.comment, gui = conf.style.headings },          -- markdown titles
         ["@markup.italic"]         = { fg = p.fg, gui = "italic" },                          -- italic text
         ["@markup.link"]           = { fg = p.string },                                      -- text references, footnotes, citations, etc.
         ["@markup.link.uri"]       = { fg = p.string, gui = "underline" },                   -- URLs, links, emails
