@@ -57,29 +57,44 @@ utils.blend = function(fg, bg, alpha)
 end
 
 utils.highlight = function(group, color)
+    local hl = {}
+
     if color.link then
-        -- Use proper linking API (Search Result 1)
         vim.api.nvim_set_hl(0, group, { link = color.link })
         return
     end
 
-    local hl = {}
-
-    -- Convert color definitions using Neovim API standards
+    -- Validate color types without notifications
     hl.fg = parse_color(color.fg) or "NONE"
     hl.bg = parse_color(color.bg) or "NONE"
     hl.sp = parse_color(color.sp) or "NONE"
 
-    -- Handle style attributes properly (Search Result 9)
+    -- Silent style validation (no notifications)
     if color.style then
+        local valid_styles = {
+            bold = true,
+            italic = true,
+            underline = true,
+            undercurl = true,
+            reverse = true,
+            strikethrough = true,
+            nocombine = true,
+            standout = true
+        }
+
         local styles = {}
         for style in string.gmatch(color.style:lower(), '([^,]+)') do
-            styles[style:gsub('%s+', '')] = true
+            local cleaned_style = style:gsub('%s+', '')
+            if valid_styles[cleaned_style] then
+                styles[cleaned_style] = true
+            end
         end
-        hl.style = styles
+
+        if not vim.tbl_isempty(styles) then
+            hl.style = styles
+        end
     end
 
-    -- Use validated API call (Search Result 4)
     vim.api.nvim_set_hl(0, group, hl)
 end
 
