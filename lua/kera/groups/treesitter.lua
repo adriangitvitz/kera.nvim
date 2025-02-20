@@ -27,7 +27,7 @@ M.get_colors = function(conf)
         ["@function.macro"]        = syntax["Macro"],                                        -- macro-defined functions
         ["@function.method"]       = { fg = p.func },                                        -- methods
         ["@function.method.call"]  = { fg = p.type },                                        -- method calls
-        ["@keyword"]               = { fg = p.keyword, gui = conf.style.keywords },          -- general keywords
+        ["@keyword"]               = { fg = p.primary, gui = conf.style.keywords },          -- general keywords
         ["@keyword.conditional"]   = { fg = p.primary, gui = conf.style.conditionals },      -- conditional keywords
         ["@keyword.exception"]     = syntax["Exception"],                                    -- exception-related keywords
         ["@keyword.import"]        = syntax["PreProc"],                                      -- import-related keywords
