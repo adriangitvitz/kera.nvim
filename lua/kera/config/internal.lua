@@ -2,8 +2,8 @@ local M = {}
 
 ---@class KeraColorscheme.InternalConfig
 local DEFAULT_SETTINGS = {
-    ---@type boolean
-    transparent = false,
+    -- ---@type boolean
+    -- transparent = false,
     ---@class KeraColorscheme.InternalConfig.style
     style = {
         ---@type string
