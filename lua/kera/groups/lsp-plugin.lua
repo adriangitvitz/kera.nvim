@@ -27,7 +27,8 @@ M.get_colors = function(conf)
         LspCxxHlSkippedRegionBeginEnd = { fg = p.operator },                                                  -- C++ skipped region begin/end
         LspReferenceText              = { bg = p.color800 },
         LspReferenceRead              = { bg = p.color800 },
-        LspReferenceWrite             = { bg = p.color8000 },
+        LspReferenceWrite             = { bg = p.color800 },
+        LspReferenceTarget            = { bg = p.color800 }
     }
     return hl
 end
