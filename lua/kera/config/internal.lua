@@ -154,7 +154,7 @@ local DEFAULT_SETTINGS = {
 }
 
 M._DEFAULT_SETTINGS = DEFAULT_SETTINGS
-M.current = M._DEFAULT_SETTINGS
+M.current = vim.tbl_deep_extend("force", {}, M._DEFAULT_SETTINGS)
 
 local opts = type(vim.g.kera_colorscheme) == "function" and vim.g.kera_colorscheme() or vim.g.kera_colorscheme or {}
 
