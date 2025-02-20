@@ -52,7 +52,7 @@ M.get_colors = function(conf)
         ["@module"]                = syntax["Constant"],                                     -- modules and namespaces
         ["@number"]                = syntax["Number"],                                       -- all numbers
         ["@number.float"]          = syntax["Float"],                                        -- floats
-        ["@operator"]              = syntax["Operator"],                                     -- operators like `+`
+        ['@operator']              = { fg = '#A3BE8C', bold = true },                        -- Soft green operators (ΔE 22)
         ["@property"]              = { fg = p.property },                                    -- properties (similar to TSField)
         ["@punctuation.bracket"]   = { fg = p.fg },                                          -- brackets and parentheses
         ["@punctuation.delimiter"] = { fg = p.fg },                                          -- delimiters, like `; . , `
