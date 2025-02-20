@@ -45,6 +45,7 @@ M.get_colors = function(conf)
         MsgSeparator     = { fg = p.builtin, bg = p.placeholder, gui = "bold" },
         NonText          = { fg = p.color500 },
         Normal           = { fg = p.fg, bg = "none" },
+        NormalNC         = { fg = p.color200, bg = "#0E1019" },
         NormalFloat      = { bg = "none", fg = p.color200 }, -- Defined background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color200, bg = p.color700 },
