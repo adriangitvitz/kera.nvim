@@ -5,7 +5,8 @@ M.get_colors = function(conf)
     local p = conf.colors
 
     local hl = {
-        ColorColumn      = { bg = p.placeholder },
+        -- ColorColumn      = { bg = p.placeholder },
+        ColorColumn      = { bg = "#bfbfbf" },
         Conceal          = { fg = p.color200, bg = "none" },
         CurSearch        = { link = 'IncSearch' },
         Cursor           = { fg = p.color200, bg = p.placeholder },
