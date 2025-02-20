@@ -63,12 +63,12 @@ function M.setup(opts)
     config = vim.tbl_deep_extend('force', config, opts)
 
 
-    config.groups = vim.tbl_deep_extend("force", {
-        error = 'DiagnosticError',
-        hint = 'DiagnosticHint',
-        info = 'DiagnosticInfo',
-        warn = 'DiagnosticWarn',
-    }, config.groups or {})
+    -- config.groups = vim.tbl_deep_extend("force", {
+    --     error = 'DiagnosticError',
+    --     hint = 'DiagnosticHint',
+    --     info = 'DiagnosticInfo',
+    --     warn = 'DiagnosticWarn',
+    -- }, config.groups or {})
 end
 
 -- function M.reload()
