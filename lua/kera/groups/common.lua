@@ -39,12 +39,12 @@ M.get_colors = function(conf)
         Folded           = { fg = p.color200, bg = "none" }, -- TODO: Change none to panel color
         FoldColumn       = { fg = p.color200, bg = "none" },
         IncSearch        = { fg = p.color200, bg = p.color600 },
-        LineNr           = { fg = p.color500 },
+        LineNr           = { fg = p.comment, bg = "#0E1019" },
         MatchParen       = { fg = p.color200, bg = p.color700 },
         MoreMsg          = { fg = p.color200, gui = "bold" },
         MsgSeparator     = { fg = p.builtin, bg = p.placeholder, gui = "bold" },
         NonText          = { fg = p.color500 },
-        Normal           = { fg = p.color200, bg = "none" },
+        Normal           = { fg = p.fg, bg = "none" },
         NormalFloat      = { bg = "none", fg = p.color200 }, -- Defined background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color200, bg = p.color700 },

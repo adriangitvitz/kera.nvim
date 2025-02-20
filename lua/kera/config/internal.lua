@@ -87,13 +87,13 @@ local DEFAULT_SETTINGS = {
         ---@type string
         delta = "#f3be7c",
         ---@type string
-        comment = '#6D6D8A',   -- Medium contrast blue-gray
+        comment = '#787878',   -- Medium contrast blue-gray
         ---@type string
         constant = '#A0A8D0',  -- Desaturated lavender
         ---@type string
         keyword = '#7890B0',   -- Muted azure (reduced blue peak)
         ---@type string
-        func = '#C09090',      -- Rose tint (better than pure red)
+        func = '#FFD700',      -- Rose tint (better than pure red)
         ---@type string
         type = "#8CA5A8",      -- Desaturated teal (L*55 → 45, chroma -30%)
         ---@type string
