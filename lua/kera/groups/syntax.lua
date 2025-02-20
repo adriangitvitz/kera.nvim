@@ -9,7 +9,7 @@ M.get_colors = function(conf)
     local hl = {
         Boolean        = { fg = p.primary, gui = conf.style.boolean },
         Character      = { fg = p.successuccess },
-        Comment        = { fg = p.color500, gui = conf.style.comments },
+        Comment        = { fg = p.comment, gui = conf.style.comments },
         Conditional    = { fg = p.color200, gui = conf.style.conditionals },
         Constant       = { fg = p.color200 },
         Define         = { fg = p.comment },                                   -- preprocessor '#define'
