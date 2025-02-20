@@ -38,7 +38,7 @@ M.get_colors = function(conf)
         FloatFooter      = { fg = p.color100, bg = "none" },
         Folded           = { fg = p.color200, bg = "none" }, -- TODO: Change none to panel color
         FoldColumn       = { fg = p.color200, bg = "none" },
-        IncSearch        = { fg = p.color200, bg = p.color600 },
+        IncSearch        = { fg = p.color200, bg = "none", gui = "bold" },
         LineNr           = { fg = p.comment, bg = "#0E1019" },
         MatchParen       = { fg = p.color200, bg = p.color700 },
         MoreMsg          = { fg = p.color200, gui = "bold" },
@@ -48,7 +48,7 @@ M.get_colors = function(conf)
         NormalNC         = { fg = p.color200, bg = "#0E1019" },
         NormalFloat      = { bg = "NONE", fg = "#C8C8C8" }, -- Defined background
         ModeMsg          = { fg = p.color200 },
-        Pmenu            = { fg = p.color200, bg = "none" },
+        Pmenu            = { fg = p.color100, bg = "none" },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
         PmenuSbar        = { bg = p.colo700 },
         PmenuThumb       = { bg = p.color600 },
@@ -77,7 +77,8 @@ M.get_colors = function(conf)
         WarningMsg       = { fg = p.warning },
         Whitespace       = { fg = p.color700 },
         WildMenu         = { link = 'IncSearch' },
-        WinSeparator     = { fg = p.color600, bg = p.color800 },
+        -- WinSeparator     = { fg = p.color600, bg = p.color800 },
+        WinSeparator     = { fg = p.color200, bg = "none" },
     }
     return hl
 end
