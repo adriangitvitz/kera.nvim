@@ -42,11 +42,11 @@ M.get_colors = function(conf)
         LineNr           = { fg = p.comment, bg = "#0E1019" },
         MatchParen       = { fg = p.color200, bg = p.color700 },
         MoreMsg          = { fg = p.color200, gui = "bold" },
-        MsgSeparator     = { fg = "#101421", bg = "NONE", gui = "bold" },
+        MsgSeparator     = { fg = p.comment, bg = p.color200, gui = "bold" },
         NonText          = { fg = p.color500 },
         Normal           = { fg = p.fg, bg = "none" },
         NormalNC         = { fg = p.color200, bg = "#0E1019" },
-        NormalFloat      = { bg = "#101421", fg = "#101421" }, -- Hover background
+        NormalFloat      = { bg = "#101421", fg = p.color200 }, -- Hover background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color100, bg = "none" },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
