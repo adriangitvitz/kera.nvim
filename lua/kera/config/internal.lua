@@ -156,7 +156,7 @@ local DEFAULT_SETTINGS = {
 M._DEFAULT_SETTINGS = DEFAULT_SETTINGS
 M.current = M._DEFAULT_SETTINGS
 
-local opts = type(vim.g.kera_colorscheme) == "function" and vim.g.kera_colorscheme() or vim.g.kera_colorscheme() or {}
+local opts = type(vim.g.kera_colorscheme) == "function" and vim.g.kera_colorscheme() or vim.g.kera_colorscheme or {}
 
 ---@param user_opts KeraColorscheme.Config
 M.set = function(user_opts)
