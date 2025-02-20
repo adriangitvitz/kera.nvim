@@ -31,7 +31,7 @@ M.get_colors = function(conf)
         ["@keyword.conditional"]   = { fg = p.primary, gui = conf.style.conditionals },      -- conditional keywords
         ["@keyword.exception"]     = syntax["Exception"],                                    -- exception-related keywords
         ["@keyword.import"]        = syntax["PreProc"],                                      -- import-related keywords
-        ["@keyword.operator"]      = { fg = p.color400, gui = conf.style.operators },        -- operator keywords (e.g., 'in' in Python)
+        ["@keyword.operator"]      = { fg = p.delta, gui = conf.style.operators },           -- operator keywords (e.g., 'in' in Python)
         ["@keyword.return"]        = { fg = p.primary, gui = conf.style.keyword_return },    -- return keywords
         ['@keyword.function']      = { fg = p.color300 },
         ["@label"]                 = syntax["Label"],                                        -- labels
