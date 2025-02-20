@@ -20,7 +20,7 @@ M.get_colors = function(conf)
         Function       = { fg = p.primary, gui = conf.style.functions },       -- functions
         Identifier     = { fg = p.color200, gui = conf.style.variables },      -- (preferred) any variable
         Include        = { fg = p.primary },                                   -- preprocessor '#include'
-        Keyword        = { fg = p.primary, gui = conf.style.keywords },        -- any other keyword
+        Keyword        = { fg = p.primary },                                   -- any other keyword
         Label          = { fg = p.color200, gui = conf.style.keywords_label }, -- 'case', 'default', etc
         Macro          = { fg = p.constant },                                  -- macros
         Number         = { fg = p.primary, gui = conf.style.number },          -- number constant

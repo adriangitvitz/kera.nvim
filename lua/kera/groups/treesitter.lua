@@ -28,11 +28,12 @@ M.get_colors = function(conf)
         ["@function.method"]       = { fg = p.func },                                        -- methods
         ["@function.method.call"]  = { fg = p.type },                                        -- method calls
         ["@keyword"]               = { fg = p.keyword, gui = conf.style.keywords },          -- general keywords
-        ["@keyword.conditional"]   = { fg = p.keyword, gui = conf.style.conditionals },      -- conditional keywords
+        ["@keyword.conditional"]   = { fg = p.primary, gui = conf.style.conditionals },      -- conditional keywords
         ["@keyword.exception"]     = syntax["Exception"],                                    -- exception-related keywords
         ["@keyword.import"]        = syntax["PreProc"],                                      -- import-related keywords
-        ["@keyword.operator"]      = { fg = p.keyword, gui = conf.style.operators },         -- operator keywords (e.g., 'in' in Python)
-        ["@keyword.return"]        = { fg = p.keyword, gui = conf.style.keyword_return },    -- return keywords
+        ["@keyword.operator"]      = { fg = p.color400, gui = conf.style.operators },        -- operator keywords (e.g., 'in' in Python)
+        ["@keyword.return"]        = { fg = p.primary, gui = conf.style.keyword_return },    -- return keywords
+        ['@keyword.function']      = { fg = p.color300 },
         ["@label"]                 = syntax["Label"],                                        -- labels
         ["@markup"]                = { fg = p.fg },                                          -- text in markup languages
         ["@markup.heading"]        = { fg = p.keyword, gui = conf.style.headings },          -- markdown titles
