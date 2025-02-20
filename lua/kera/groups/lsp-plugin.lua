@@ -15,7 +15,7 @@ M.get_colors = function(conf)
         DiagnosticUnderlineWarn       = { gui = "undercurl", sp = p.delta },                                  -- undercurl for warnings
         DiagnosticVirtualTextError    = { fg = p.error, gui = conf.plugins.lsp.diagnostic_error },            -- virtual text for errors
         DiagnosticVirtualTextHint     = { fg = p.hint, gui = conf.plugins.lsp.diagnostic_hint },              -- virtual text for hints
-        DiagnosticVirtualTextInfo     = { fg = p.info, gui = conf.plugins.lsp.diagnostic_info },              -- virtual text for info
+        DiagnosticVirtualTextInfo     = { fg = p.delta, gui = conf.plugins.lsp.diagnostic_info },             -- virtual text for info
         DiagnosticVirtualTextWarn     = { fg = p.warning },                                                   -- virtual text for warnings
         DiagnosticWarn                = { fg = p.warning, gui = conf.plugins.lsp.diagnostic_warn },           -- diagnostic warning
         LspCodeLens                   = { fg = p.comment, gui = conf.style.comments },                        -- code lens text
