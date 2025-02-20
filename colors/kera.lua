@@ -1,3 +1,1 @@
-package.loaded['kera.palette'] = nil
-
-require('kera').colorscheme()
+require("kera")._colorscheme()
