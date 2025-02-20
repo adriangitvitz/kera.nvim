@@ -45,7 +45,8 @@ M.get_colors = function(conf)
         ["@markup.list.unchecked"] = { fg = p.func },                                        -- unchecked todo list items
         ["@markup.math"]           = { fg = p.string },                                      -- math environments, like `$$` in LaTeX
         ["@markup.quote.markdown"] = { fg = p.comment },                                     -- quotes with '>'
-        ["@markup.raw"]            = { fg = p.constant },                                    -- inline code in markdown
+        -- ["@markup.raw"]            = { fg = p.constant },                                    -- inline code in markdown
+        ["@markup.raw"]            = { fg = "#101421", bg = "#101421" },
         ["@markup.strikethrough"]  = { fg = p.comment, gui = "strikethrough" },              -- strikethrough text
         ["@markup.strong"]         = { fg = p.fg, gui = "bold" },                            -- bold text
         ["@markup.underline"]      = { fg = p.fg, gui = "underline" },                       -- underlined text
