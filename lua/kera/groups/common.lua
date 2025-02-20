@@ -33,19 +33,19 @@ M.get_colors = function(conf)
         Directory        = { fg = p.color300, bg = p.none },
         ErrorMsg         = { fg = p.error, style = 'bold' },
         EndOfBuffer      = { fg = p.color400 or p.color600 },
-        FloatBorder      = { fg = p.color100, bg = conf.transparent and "none" }, -- Use your 'info' color (#00A8FF)
-        FloatTitle       = { fg = p.info, bold = true, bg = conf.transparent and "none" },
-        FloatFooter      = { fg = p.color100, bg = conf.transparent and "none" or p.color400 },
-        Folded           = { fg = p.color200, bg = conf.transparent and "none" }, -- TODO: Change none to panel color
-        FoldColumn       = { fg = p.color200, bg = conf.transparent and "none" },
+        FloatBorder      = { fg = p.color100, bg = "none" }, -- Use your 'info' color (#00A8FF)
+        FloatTitle       = { fg = p.info, bold = true, bg = "none" },
+        FloatFooter      = { fg = p.color100, bg = "none" },
+        Folded           = { fg = p.color200, bg = "none" }, -- TODO: Change none to panel color
+        FoldColumn       = { fg = p.color200, bg = "none" },
         IncSearch        = { fg = p.color200, bg = p.color600 },
         LineNr           = { fg = p.color500 },
         MatchParen       = { fg = p.color200, bg = p.color700 },
         MoreMsg          = { fg = p.color200, gui = "bold" },
         MsgSeparator     = { fg = p.builtin, bg = p.placeholder, gui = "bold" },
         NonText          = { fg = p.color500 },
-        Normal           = { fg = p.color200, bg = conf.transparent and "none" },
-        NormalFloat      = { bg = conf.transparent and "none", fg = p.color200 }, -- Defined background
+        Normal           = { fg = p.color200, bg = "none" },
+        NormalFloat      = { bg = "none", fg = p.color200 }, -- Defined background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color200, bg = p.color700 },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
@@ -54,7 +54,7 @@ M.get_colors = function(conf)
         Question         = { fg = p.warning },
         QuickFixLine     = { fg = p.error, gui = "underline" },
         Search           = { fg = p.color200, bg = p.color600 },
-        SignColumn       = { fg = p.color200, bg = conf.transparent and "none" },
+        SignColumn       = { fg = p.color200, bg = "none" },
         SpecialKey       = { fg = p.color200 },
         SpellBad         = { sp = p.error, style = 'undercurl' },
         SpellCap         = { sp = p.blue1, style = 'undercurl' },
@@ -68,7 +68,7 @@ M.get_colors = function(conf)
         TabLine          = { fg = p.color200 },
         TabLineFill      = { bg = p.color800 },
         TabLineSel       = { fg = p.color200, bg = p.color800 },
-        Terminal         = { fg = p.color100, bg = conf.transparent and "none" or p.placeholder },
+        Terminal         = { fg = p.color100, bg = "none" },
         ToolbarButton    = { fg = p.placeholder, bg = p.colo700 },
         ToolbarLine      = { fg = p.color100 },
         Visual           = { fg = p.color200, bg = p.color600 },
