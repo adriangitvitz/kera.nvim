@@ -33,7 +33,7 @@ M.get_colors = function(conf)
         Directory        = { fg = p.color300, bg = "none" },
         ErrorMsg         = { fg = p.error, style = 'bold' },
         EndOfBuffer      = { fg = p.color400 or p.color600 },
-        FloatBorder      = { fg = p.color100, bg = "none" }, -- Use your 'info' color (#00A8FF)
+        FloatBorder      = { fg = p.color100, bg = "#1A1D23" }, -- Use your 'info' color (#00A8FF)
         FloatTitle       = { fg = p.builtin, bold = true, bg = "none" },
         FloatFooter      = { fg = p.color100, bg = "none" },
         Folded           = { fg = p.color200, bg = "none" }, -- TODO: Change none to panel color
@@ -46,7 +46,7 @@ M.get_colors = function(conf)
         NonText          = { fg = p.color500 },
         Normal           = { fg = p.fg, bg = "none" },
         NormalNC         = { fg = p.color200, bg = "#0E1019" },
-        NormalFloat      = { bg = "none", fg = p.color200 }, -- Defined background
+        NormalFloat      = { bg = "#1A1D23", fg = "#C8C8C8" }, -- Defined background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color200, bg = p.color700 },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
