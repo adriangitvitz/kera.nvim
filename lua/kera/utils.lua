@@ -1,7 +1,7 @@
 local utils = {}
 
 local function parse_color(color)
-    if not color then return nil end
+    if not color then return "NONE" end
     if color:lower() == 'none' then return 'NONE' end
 
     if color:find('^#%x%x%x%x%x%x$') then
@@ -57,25 +57,29 @@ utils.blend = function(fg, bg, alpha)
 end
 
 utils.highlight = function(group, color)
-    local hl = {}
-
     if color.link then
+        -- Use proper linking API (Search Result 1)
         vim.api.nvim_set_hl(0, group, { link = color.link })
         return
     end
 
-    hl.fg = parse_color(color.fg)
-    hl.bg = parse_color(color.bg)
-    hl.sp = parse_color(color.sp)
+    local hl = {}
 
+    -- Convert color definitions using Neovim API standards
+    hl.fg = parse_color(color.fg) or "NONE"
+    hl.bg = parse_color(color.bg) or "NONE"
+    hl.sp = parse_color(color.sp) or "NONE"
+
+    -- Handle style attributes properly (Search Result 9)
     if color.style then
         local styles = {}
-        for style in string.gmatch(color.style, '([^,]+)') do
-            styles[style] = true
+        for style in string.gmatch(color.style:lower(), '([^,]+)') do
+            styles[style:gsub('%s+', '')] = true
         end
         hl.style = styles
     end
 
+    -- Use validated API call (Search Result 4)
     vim.api.nvim_set_hl(0, group, hl)
 end
 
