@@ -6,7 +6,8 @@ M.get_colors = function(conf)
 
     local hl = {
         -- ColorColumn      = { bg = p.placeholder },
-        ColorColumn      = { bg = "#101421" },
+        ColorColumn      = { bg = p.code_block },
+        LazyGitSelection = { bg = p.lazygit_select },
         Conceal          = { fg = p.color200, bg = "none" },
         CurSearch        = { link = 'IncSearch' },
         Cursor           = { fg = p.color200, bg = p.placeholder },
@@ -73,7 +74,7 @@ M.get_colors = function(conf)
         Terminal         = { fg = p.color100, bg = "none" },
         ToolbarButton    = { fg = p.placeholder, bg = p.colo700 },
         ToolbarLine      = { fg = p.color100 },
-        Visual           = { fg = p.color200, bg = p.color600 },
+        Visual           = { fg = p.color200, bg = p.visual },
         VisualNOS        = { fg = "none", bg = p.color400, gui = "underline" },
         WarningMsg       = { fg = p.warning },
         Whitespace       = { fg = p.color700 },

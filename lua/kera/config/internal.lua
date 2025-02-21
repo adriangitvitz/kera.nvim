@@ -87,21 +87,29 @@ local DEFAULT_SETTINGS = {
         ---@type string
         delta = "#f3be7c",
         ---@type string
-        comment = '#787878',   -- Medium contrast blue-gray
+        comment = '#787878',  -- Medium contrast blue-gray
         ---@type string
-        constant = '#A0A8D0',  -- Desaturated lavender
+        constant = '#A0A8D0', -- Desaturated lavender
         ---@type string
-        keyword = '#7890B0',   -- Muted azure (reduced blue peak)
+        keyword = '#7890B0',  -- Muted azure (reduced blue peak)
         ---@type string
-        func = '#FFD700',      -- Rose tint (better than pure red)
+        func = '#FFD700',     -- Rose tint (better than pure red)
         ---@type string
-        type = "#8CA5A8",      -- Desaturated teal (L*55 → 45, chroma -30%)
+        type = "#8CA5A8",     -- Desaturated teal (L*55 → 45, chroma -30%)
         ---@type string
-        string = "#D4A88F",    -- Muted ochre (hue shift 25° → 35°, saturation -40%)
+        string = "#D4A88F",   -- Muted ochre (hue shift 25° → 35°, saturation -40%)
         ---@type string
-        property = "#B0B0C8",  -- Low-chroma lavender (Munsell value 6.5)
+        property = "#B0B0C8", -- Low-chroma lavender (Munsell value 6.5)
         ---@type string
-        fg = "#D8D8D8",        -- Primary text (L*85 → 82, 8.5:1 contrast ratio)
+        fg = "#D8D8D8",       -- Primary text (L*85 → 82, 8.5:1 contrast ratio)
+        ---@type string
+        bg = "#242424",
+        ---@type string
+        visual = "#405060",
+        ---@type string
+        lazygit_select = "#304030", -- Low-saturation green
+        ---@type string
+        code_block = "#2a2a2a",
         ---@type string
         parameter = "#A88DA5", -- Earthy mauve (CIECAM02 J=50, C=15)
         ---@type string
