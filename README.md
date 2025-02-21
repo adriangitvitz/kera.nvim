@@ -17,3 +17,15 @@ return {
     end
 }
 ```
+
+If using Ghostty use Argonaut theme
+
+```
+font-family = ""
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-size = 18
+font-thicken = true
+background-opacity = 1
+background-blur-radius = 20
+theme = Argonaut
+```
