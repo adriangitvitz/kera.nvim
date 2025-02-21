@@ -6,7 +6,11 @@ M.get_colors = function(conf)
 
     local hl = {
         -- ColorColumn      = { bg = p.placeholder },
-        ColorColumn      = { bg = "#101421" },
+        ColorColumn      = { bg = p.code_block },
+        -- common.lua
+        LazyGitSelection = { bg = "#304030" }, -- Must match snacks config
+        LazyGitStaged    = { fg = "#5E8975" },
+        LazyGitUnstaged  = { fg = "#B85C5C" },
         Conceal          = { fg = p.color200, bg = "none" },
         CurSearch        = { link = 'IncSearch' },
         Cursor           = { fg = p.color200, bg = p.placeholder },
@@ -46,8 +50,8 @@ M.get_colors = function(conf)
         MsgSeparator     = { fg = p.comment, bg = p.color200, gui = "bold" },
         NonText          = { fg = p.color500 },
         Normal           = { fg = p.fg, bg = "none" },
-        NormalNC         = { fg = p.color200, bg = "#0E1019" },
-        NormalFloat      = { bg = "#101421", fg = p.color200 }, -- Hover background
+        NormalNC         = { fg = p.fg, bg = "#0E1019" },
+        NormalFloat      = { bg = "NONE", fg = p.fg }, -- Hover background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color100, bg = "none" },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
@@ -73,7 +77,7 @@ M.get_colors = function(conf)
         Terminal         = { fg = p.color100, bg = "none" },
         ToolbarButton    = { fg = p.placeholder, bg = p.colo700 },
         ToolbarLine      = { fg = p.color100 },
-        Visual           = { fg = p.color200, bg = p.color600 },
+        Visual           = { fg = p.color200, bg = p.visual },
         VisualNOS        = { fg = "none", bg = p.color400, gui = "underline" },
         WarningMsg       = { fg = p.warning },
         Whitespace       = { fg = p.color700 },
