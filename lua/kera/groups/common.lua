@@ -51,7 +51,7 @@ M.get_colors = function(conf)
         NonText          = { fg = p.color500 },
         Normal           = { fg = p.fg, bg = "none" },
         NormalNC         = { fg = p.fg, bg = "#0E1019" },
-        NormalFloat      = { bg = "#101421", fg = p.fg }, -- Hover background
+        NormalFloat      = { bg = "NONE", fg = p.fg }, -- Hover background
         ModeMsg          = { fg = p.color200 },
         Pmenu            = { fg = p.color100, bg = "none" },
         PmenuSel         = { fg = p.color200, bg = p.color400 },
