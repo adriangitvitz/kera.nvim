@@ -29,3 +29,5 @@ background-opacity = 1
 background-blur-radius = 20
 theme = Argonaut
 ```
+![Screenshot 2025-02-21 at 1 28 46 a m](https://github.com/user-attachments/assets/e52281f4-305b-4507-8aba-6f2e1596724d)
+
