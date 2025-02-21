@@ -7,7 +7,7 @@ M.get_colors = function(conf)
     local hl = {
         -- ColorColumn      = { bg = p.placeholder },
         ColorColumn         = { bg = p.code_block },
-        LazyGitSelection    = { bg = p.lazygit_select, fg = p.fg },
+        LazyGitSelection    = { bg = "NONE", fg = p.lazygit_select },
         LazyGitActiveBorder = { fg = "#5f7f5f", bg = "NONE" },
         Conceal             = { fg = p.color200, bg = "none" },
         CurSearch           = { link = 'IncSearch' },
