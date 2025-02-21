@@ -1,7 +1,6 @@
 ```lua
 return {
     "adriangitvitz/kera.nvim",
-    branch = "tsoding",
     priority = 1000, -- Ensure proper loading order
     init = function()
         vim.opt.termguicolors = true
