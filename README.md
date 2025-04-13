@@ -18,7 +18,7 @@ return {
 }
 ```
 
-If using Ghostty use Argonaut theme
+If using Ghostty use Argonaut theme or the next provided theme configuration
 
 ```
 font-family = ""
